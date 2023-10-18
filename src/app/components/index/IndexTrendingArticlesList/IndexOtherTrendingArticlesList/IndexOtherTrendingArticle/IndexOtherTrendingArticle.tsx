@@ -3,7 +3,7 @@ import { FC } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const OtherTrendingArticle: FC = () => {
+const IndexOtherTrendingArticle: FC = () => {
   return (
     <li className='basis-1/3'>
       <Link href='#' className='block group'>
@@ -39,4 +39,4 @@ const OtherTrendingArticle: FC = () => {
   );
 };
 
-export { OtherTrendingArticle };
+export { IndexOtherTrendingArticle };

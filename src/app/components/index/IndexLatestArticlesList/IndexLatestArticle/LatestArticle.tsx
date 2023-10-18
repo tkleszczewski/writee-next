@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 import { ArrowRight } from 'lucide-react';
 
-const LatestArticle: FC = () => {
+const IndexLatestArticle: FC = () => {
   return (
     <li className='basis-full sm:basis-1/2-with-gap lg:basis-1/4-with-gap'>
       <article>
@@ -44,4 +44,4 @@ const LatestArticle: FC = () => {
   );
 };
 
-export { LatestArticle };
+export { IndexLatestArticle };

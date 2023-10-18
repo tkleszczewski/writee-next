@@ -2,18 +2,18 @@ import { FC } from 'react';
 
 import Link from 'next/link';
 
-import MainTrendingArticle from './MainTrendingArticle';
-import OtherTrrendingArticlesList from './OtherTrendingArticlesList';
+import IndexMainTrendingArticle from './IndexMainTrendingArticle';
+import IndexOtherTrrendingArticlesList from './IndexOtherTrendingArticlesList';
 
-const TrendingArticlesList: FC = () => {
+const IndexTrendingArticlesList: FC = () => {
   return (
     <section>
       <h1 className='mb-8 text-4xl font-headings font-bold'>
         Trending articles
       </h1>
       <div className='flex flex-wrap gap-5percent'>
-        <MainTrendingArticle />
-        <OtherTrrendingArticlesList />
+        <IndexMainTrendingArticle />
+        <IndexOtherTrrendingArticlesList />
       </div>
       <div className='flex justify-center my-8'>
         <Link
@@ -27,4 +27,4 @@ const TrendingArticlesList: FC = () => {
   );
 };
 
-export { TrendingArticlesList };
+export { IndexTrendingArticlesList };

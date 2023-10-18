@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 import { ArrowRight } from 'lucide-react';
 
-const MainTrendingArticle: FC = () => {
+const IndexMainTrendingArticle: FC = () => {
   return (
     <article className='basis-full lg:basis-2/3-with-gap mb-8 lg:mb-0'>
       <Link href='#' className='flex flex-col group'>
@@ -42,4 +42,4 @@ const MainTrendingArticle: FC = () => {
   );
 };
 
-export { MainTrendingArticle };
+export { IndexMainTrendingArticle };

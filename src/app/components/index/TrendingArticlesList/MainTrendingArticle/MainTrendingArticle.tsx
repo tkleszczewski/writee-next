@@ -2,6 +2,8 @@ import { FC } from 'react';
 
 import Link from 'next/link';
 
+import { ArrowRight } from 'lucide-react';
+
 const MainTrendingArticle: FC = () => {
   return (
     <article className='basis-full lg:basis-2/3-with-gap mb-8 lg:mb-0'>
@@ -16,7 +18,8 @@ const MainTrendingArticle: FC = () => {
               16:9
             </p>
             <p className='pl-4 py-4 absolute bottom-0 w-full left-0 bg-secondary bg-opacity-50 text-primary fade-in hidden group-hover:flex justify-between font-extralight italic'>
-              Read more ...<i className='mr-4' data-lucide='arrow-right'></i>
+              Read more ...
+              <ArrowRight className='mr-4' />
             </p>
           </div>
           <div className='mt-4'>

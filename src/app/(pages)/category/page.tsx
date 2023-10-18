@@ -1,7 +1,7 @@
-import CategoryArticlesList from '../components/category/CategoryArticlesList';
-import CategoryMainArticle from '../components/category/CategoryMainArticle';
-import Divider from '../components/common/Divider';
-import Search from '../components/common/Search';
+import CategoryArticlesList from '../../components/category/CategoryArticlesList';
+import CategoryMainArticle from '../../components/category/CategoryMainArticle';
+import Divider from '../../components/common/Divider';
+import Search from '../../components/common/Search';
 
 export default function CategoryPage() {
   return (

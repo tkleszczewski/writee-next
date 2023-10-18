@@ -1,0 +1,25 @@
+:root {
+  /* color variables */
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: rgb(0, 0, 0);
+  --secondary-light-color: rgb(40, 40, 40);
+  --border-gray-color: rgb(200, 200, 200);
+  --border-gray-dark-color: rgb(120, 120, 120);
+  --contrast-400: rgb(52 211 153);
+  --contrast-500: rgb(16 185 129);
+  --contrast-600: rgb(5 150 105);
+
+  /* font variables  */
+  --primary-font: 'Mukta', sans-serif;
+  --secondary-font: 'Open Sans', sans-serif;
+  --tertiary-font: 'Cabin', sans-serif;
+
+  --headings-font: var(--tertiary-font);
+  --paragraphs-font: var(--primary-font);
+
+  /* height variables */
+  --header-height: 80px;
+  --footer-height: 600px;
+
+  --main-min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}

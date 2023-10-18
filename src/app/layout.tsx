@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang='zxx'>
       <body className='font-sans'>
         <Header />
-        <main className='min-h-main mt-header pt-20'>{children}</main>
+        <main className='min-h-main pt-header-breathe'>{children}</main>
         <Footer />
       </body>
     </html>

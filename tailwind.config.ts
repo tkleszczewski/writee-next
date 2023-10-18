@@ -25,6 +25,7 @@ const config: Config = {
       spacing: {
         header: 'var(--header-height)',
         footer: 'var(--footer-height)',
+        'header-breathe': 'calc(var(--header-height) + var(--breathe-height))',
       },
       textColor: {
         primary: 'var(--primary-color)',

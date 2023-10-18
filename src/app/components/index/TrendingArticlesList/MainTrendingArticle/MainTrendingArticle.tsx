@@ -8,7 +8,7 @@ const MainTrendingArticle: FC = () => {
           <div className='relative'>
             <img
               className='object-cover aspect-video w-full object-center'
-              src='/src/img/gray.jpg'
+              src='/gray.jpg'
             />
             <p className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-primary text-3xl z-20'>
               16:9

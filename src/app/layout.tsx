@@ -1,10 +1,9 @@
 import type { Metadata } from 'next';
 
-import { Inter } from 'next/font/google';
+import '@/app/styles/style.css';
 
-import './styles/style.css';
-
-const inter = Inter({ subsets: ['latin'] });
+import Header from '@/app/components/layout/Header';
+import Footer from '@/app/components/layout/Footer';
 
 export const metadata: Metadata = {
   title: 'Writee | Next.js',
@@ -17,7 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang='zxx'>
-      <body>{children}</body>
+      <body className='font-sans'>
+        <Header />
+        <main className='min-h-main mt-header pt-20'>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

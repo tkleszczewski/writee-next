@@ -1,8 +1,9 @@
 import { FC } from 'react';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
-const OtherTrrendingArticlesList: FC = () => {
+const OtherTrendingArticlesList: FC = () => {
   return (
     <div className='basis-full lg:basis-1/3-with-gap min-h-full'>
       <ul className='h-full flex flex-col justify-between gap-y-10'>
@@ -10,7 +11,10 @@ const OtherTrrendingArticlesList: FC = () => {
           <Link href='#' className='block group'>
             <article className='flex flex-wrap justify-center gap-5percent h-full'>
               <div className='sm:basis-1/3-with-gap relative'>
-                <img
+                <Image
+                  alt='gray picture'
+                  height={500}
+                  width={500}
                   className='object-cover aspect-square w-full object-center'
                   src='/gray.jpg'
                 />
@@ -38,7 +42,10 @@ const OtherTrrendingArticlesList: FC = () => {
           <Link href='#' className='block group'>
             <article className='flex flex-wrap justify-center gap-5percent h-full'>
               <div className='sm:basis-1/3-with-gap relative'>
-                <img
+                <Image
+                  alt='gray picture'
+                  height={500}
+                  width={500}
                   className='object-cover aspect-square w-full object-center'
                   src='/gray.jpg'
                 />
@@ -66,7 +73,10 @@ const OtherTrrendingArticlesList: FC = () => {
           <Link href='#' className='block group'>
             <article className='flex flex-wrap justify-center gap-5percent h-full'>
               <div className='sm:basis-1/3-with-gap relative'>
-                <img
+                <Image
+                  alt='gray picture'
+                  height={500}
+                  width={500}
                   className='object-cover aspect-square w-full object-center'
                   src='/gray.jpg'
                 />
@@ -95,4 +105,4 @@ const OtherTrrendingArticlesList: FC = () => {
   );
 };
 
-export { OtherTrrendingArticlesList };
+export { OtherTrendingArticlesList };

@@ -1,6 +1,7 @@
 import { FC } from 'react';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { ArrowRight } from 'lucide-react';
 
@@ -10,7 +11,10 @@ const MainTrendingArticle: FC = () => {
       <Link href='#' className='flex flex-col group'>
         <div>
           <div className='relative'>
-            <img
+            <Image
+              alt='gray picture'
+              width={500}
+              height={500}
               className='object-cover aspect-video w-full object-center'
               src='/gray.jpg'
             />

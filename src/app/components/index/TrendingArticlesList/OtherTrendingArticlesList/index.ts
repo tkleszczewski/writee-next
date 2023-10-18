@@ -1,3 +1,3 @@
-import { OtherTrrendingArticlesList } from './OtherTrendingArticlesList';
+import { OtherTrendingArticlesList } from './OtherTrendingArticlesList';
 
-export default OtherTrrendingArticlesList;
+export default OtherTrendingArticlesList;

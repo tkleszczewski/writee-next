@@ -1,6 +1,7 @@
 import { FC } from 'react';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { ArrowRight } from 'lucide-react';
 
@@ -14,8 +15,11 @@ const LatestArticlesList: FC = () => {
             <Link href='#' className='flex flex-col group'>
               <div>
                 <div className='relative'>
-                  <img
-                    className='object-cover aspect-video w-full object-center'
+                  <Image
+                    alt='gray picture'
+                    height={500}
+                    width={500}
+                    className='object-cover aspect-square w-full object-center'
                     src='/gray.jpg'
                   />
                   <p className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-primary text-3xl z-20'>
@@ -45,8 +49,11 @@ const LatestArticlesList: FC = () => {
             <Link href='#' className='flex flex-col group'>
               <div>
                 <div className='relative'>
-                  <img
-                    className='object-cover aspect-video w-full object-center'
+                  <Image
+                    alt='gray picture'
+                    height={500}
+                    width={500}
+                    className='object-cover aspect-square w-full object-center'
                     src='/gray.jpg'
                   />
                   <p className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-primary text-3xl z-20'>
@@ -76,8 +83,11 @@ const LatestArticlesList: FC = () => {
             <Link href='#' className='flex flex-col group'>
               <div>
                 <div className='relative'>
-                  <img
-                    className='object-cover aspect-video w-full object-center'
+                  <Image
+                    alt='gray picture'
+                    height={500}
+                    width={500}
+                    className='object-cover aspect-square w-full object-center'
                     src='/gray.jpg'
                   />
                   <p className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-primary text-3xl z-20'>
@@ -107,8 +117,11 @@ const LatestArticlesList: FC = () => {
             <Link href='#' className='flex flex-col group'>
               <div>
                 <div className='relative'>
-                  <img
-                    className='object-cover aspect-video w-full object-center'
+                  <Image
+                    alt='gray picture'
+                    height={500}
+                    width={500}
+                    className='object-cover aspect-square w-full object-center'
                     src='/gray.jpg'
                   />
                   <p className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-primary text-3xl z-20'>

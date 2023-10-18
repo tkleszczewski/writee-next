@@ -2,6 +2,8 @@
 
 import { FC, useState, useCallback } from 'react';
 
+import Link from 'next/link';
+
 import clsx from 'clsx';
 
 import { Menu } from 'lucide-react';
@@ -17,7 +19,7 @@ const Header: FC = () => {
     <header className='h-header bg-primary fixed top-0 left-0 w-full z-20 shadow-sm'>
       <div className='container xl:!max-w-7xl px-8 mx-auto flex h-full items-center justify-between relative'>
         <p className='text-xl font-headings font-bold inline text-secondary'>
-          <a href='./index.html'>Writee</a>
+          <Link href='/'>Writee</Link>
         </p>
         <nav className='block sm:hidden'>
           <button
@@ -36,19 +38,19 @@ const Header: FC = () => {
           >
             <ul id='mobile-navigation'>
               <li className='my-4'>
-                <a href='category.html'>Design</a>
+                <Link href='/category'>Design</Link>
               </li>
               <li className='my-4'>
-                <a href='category.html'>Engineering</a>
+                <Link href='/category'>Engineering</Link>
               </li>
               <li className='my-4'>
-                <a href='category.html'>Opensource</a>
+                <Link href='/category'>Opensource</Link>
               </li>
               <li className='my-4'>
-                <a href='category.html'>Education</a>
+                <Link href='/category'>Education</Link>
               </li>
               <li className='my-4'>
-                <a href='category.html'>Community</a>
+                <Link href='/category'>Community</Link>
               </li>
             </ul>
           </div>
@@ -58,34 +60,34 @@ const Header: FC = () => {
             <p className='font-extralight text-xs font-headings'>Categories</p>
             <ul className='flex items-center font-semibold'>
               <li className='ml-6'>
-                <a className='relative inline-block group' href='category.html'>
+                <Link className='relative inline-block group' href='/category'>
                   Design
                   <span className='slide-in hidden absolute left-0 bottom-1 bg-secondary w-full h-px group-hover:block'></span>
-                </a>
+                </Link>
               </li>
               <li className='ml-6'>
-                <a className='relative inline-block group' href='category.html'>
+                <Link className='relative inline-block group' href='/category'>
                   Engineering
                   <span className='slide-in hidden absolute left-0 bottom-1 bg-secondary w-full h-px group-hover:block'></span>
-                </a>
+                </Link>
               </li>
               <li className='ml-6'>
-                <a className='relative inline-block group' href='category.html'>
+                <Link className='relative inline-block group' href='/category'>
                   Opensource
                   <span className='slide-in hidden absolute left-0 bottom-1 bg-secondary w-full h-px group-hover:block'></span>
-                </a>
+                </Link>
               </li>
               <li className='ml-6'>
-                <a className='relative inline-block group' href='category.html'>
+                <Link className='relative inline-block group' href='/category'>
                   Education
                   <span className='slide-in hidden absolute left-0 bottom-1 bg-secondary w-full h-px group-hover:block'></span>
-                </a>
+                </Link>
               </li>
               <li className='ml-6'>
-                <a className='relative inline-block group' href='category.html'>
+                <Link className='relative inline-block group' href='/category'>
                   Community
                   <span className='slide-in hidden absolute left-0 bottom-1 bg-secondary w-full h-px group-hover:block'></span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

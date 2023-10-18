@@ -16,7 +16,7 @@ const LatestArticle: FC = () => {
                 alt='gray picture'
                 height={500}
                 width={500}
-                className='object-cover aspect-square w-full object-center'
+                className='object-cover aspect-video w-full object-center'
                 src='/gray.jpg'
               />
               <p className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-primary text-3xl z-20'>

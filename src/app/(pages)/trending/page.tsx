@@ -3,7 +3,7 @@ import Search from '@/app/components/common/Search';
 import TrendingArticlesList from '@/app/components/trending/TrendingArticlesList';
 import TrendingMainArticle from '@/app/components/trending/TrendingMainArticle';
 
-export default function CategoryPage() {
+export default function TrendingPage() {
   return (
     <div className='container mx-auto xl:!max-w-7xl px-8'>
       <Search />

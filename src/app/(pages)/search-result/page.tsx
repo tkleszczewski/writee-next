@@ -1,7 +1,7 @@
 import Search from '@/app/components/common/Search';
 import SearchResultArticlesList from '@/app/components/search-result/SearchResultArticlesList';
 
-export default function CategoryPage() {
+export default function SearchResultPage() {
   return (
     <div className='container mx-auto xl:!max-w-7xl px-8'>
       <Search />

@@ -1,5 +1,7 @@
 import { FC } from 'react';
 
+import Image from 'next/image';
+
 import { ArrowRight } from 'lucide-react';
 
 const CategoryArticle: FC = () => {
@@ -8,8 +10,11 @@ const CategoryArticle: FC = () => {
       <article>
         <a href='#blog-post' className='block group'>
           <div className='relative'>
-            <img
-              className='aspect-video w-full object-cover object-center'
+            <Image
+              height={500}
+              width={500}
+              alt='gray picture'
+              className='object-cover aspect-video w-full object-center'
               src='/gray.jpg'
             />
             <p className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-primary text-3xl'>

@@ -1,5 +1,7 @@
 import { FC } from 'react';
 
+import Image from 'next/image';
+
 import { ArrowRight } from 'lucide-react';
 
 const CategoryMainArticle: FC = () => {
@@ -18,7 +20,10 @@ const CategoryMainArticle: FC = () => {
             </div>
           </div>
           <div className='basis-full md:basis-2/3-with-gap relative order-1 md:order-2'>
-            <img
+            <Image
+              height={500}
+              width={500}
+              alt='gray picture'
               className='object-cover aspect-video w-full object-center'
               src='/gray.jpg'
             />

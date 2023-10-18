@@ -1,8 +1,18 @@
-import { FC } from 'react';
+'use client';
+
+import { FC, useState, useCallback } from 'react';
+
+import clsx from 'clsx';
 
 import { Menu } from 'lucide-react';
 
 const Header: FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
+  const handleMenuButtonClick = useCallback(() => {
+    setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
+  }, []);
+
   return (
     <header className='h-header bg-primary fixed top-0 left-0 w-full z-20 shadow-sm'>
       <div className='container xl:!max-w-7xl px-8 mx-auto flex h-full items-center justify-between relative'>
@@ -11,14 +21,18 @@ const Header: FC = () => {
         </p>
         <nav className='block sm:hidden'>
           <button
-            id='menu-button'
+            onClick={handleMenuButtonClick}
             className='border border-secondary rounded p-1'
           >
             <Menu />
           </button>
           <div
-            id='navigation-container'
-            className='px-8 hidden absolute top-header left-0 bg-primary w-full z-20 shadow-md'
+            className={clsx(
+              'px-8 absolute top-header left-0 bg-primary w-full z-20 shadow-md',
+              {
+                hidden: !isMenuOpen,
+              }
+            )}
           >
             <ul id='mobile-navigation'>
               <li className='my-4'>

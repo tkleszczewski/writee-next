@@ -1,5 +1,6 @@
 import { FC } from 'react';
 
+import Link from 'next/link';
 import Image from 'next/image';
 
 import { ArrowRight } from 'lucide-react';
@@ -8,7 +9,7 @@ const CategoryArticle: FC = () => {
   return (
     <li className='basis-full sm:basis-1/2-with-gap lg:basis-1/3-with-gap hover:-translate-y-2 transition-transform duration-150'>
       <article>
-        <a href='#blog-post' className='block group'>
+        <Link href='#' className='block group'>
           <div className='relative'>
             <Image
               height={500}
@@ -34,7 +35,7 @@ const CategoryArticle: FC = () => {
             <div className='h-4 w-px bg-secondary mx-3'></div>
             <p>Marketing</p>
           </div>
-        </a>
+        </Link>
       </article>
     </li>
   );

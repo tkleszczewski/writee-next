@@ -1,5 +1,6 @@
 import { FC } from 'react';
 
+import Link from 'next/link';
 import Image from 'next/image';
 
 import { ArrowRight } from 'lucide-react';
@@ -8,7 +9,7 @@ const CategoryMainArticle: FC = () => {
   return (
     <section>
       <article>
-        <a href='#' className='flex flex-wrap gap-5percent group'>
+        <Link href='#' className='flex flex-wrap gap-5percent group'>
           <div className='mt-4 md:mt-0 basis-full md:basis-1/3-with-gap flex flex-col items-start justify-end md:items-end order-2 md:order-1'>
             <p className='font-headings font-bold text-xl sm:text-3xl group-hover:underline text-end'>
               Creating content that attracts readers
@@ -34,7 +35,7 @@ const CategoryMainArticle: FC = () => {
               Read more ... <ArrowRight className='mr-4' />
             </p>
           </div>
-        </a>
+        </Link>
       </article>
     </section>
   );

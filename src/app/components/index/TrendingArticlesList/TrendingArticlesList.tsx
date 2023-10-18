@@ -1,4 +1,7 @@
 import { FC } from 'react';
+
+import Link from 'next/link';
+
 import MainTrendingArticle from './MainTrendingArticle';
 import OtherTrrendingArticlesList from './OtherTrendingArticlesList';
 
@@ -13,12 +16,12 @@ const TrendingArticlesList: FC = () => {
         <OtherTrrendingArticlesList />
       </div>
       <div className='flex justify-center my-8'>
-        <a
-          href='./trending.html'
+        <Link
+          href='/trending'
           className='px-8 py-4 bg-secondary text-primary rounded hover:bg-secondary-light transition-colors duration-150'
         >
           See all trending
-        </a>
+        </Link>
       </div>
     </section>
   );

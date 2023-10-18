@@ -1,9 +1,11 @@
 import { FC } from 'react';
 
+import Link from 'next/link';
+
 const MainTrendingArticle: FC = () => {
   return (
     <article className='basis-full lg:basis-2/3-with-gap mb-8 lg:mb-0'>
-      <a href='#' className='flex flex-col group'>
+      <Link href='#' className='flex flex-col group'>
         <div>
           <div className='relative'>
             <img
@@ -28,7 +30,7 @@ const MainTrendingArticle: FC = () => {
             </div>
           </div>
         </div>
-      </a>
+      </Link>
     </article>
   );
 };

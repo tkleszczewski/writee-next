@@ -1,11 +1,13 @@
 import { FC } from 'react';
 
+import Link from 'next/link';
+
 const OtherTrrendingArticlesList: FC = () => {
   return (
     <div className='basis-full lg:basis-1/3-with-gap min-h-full'>
       <ul className='h-full flex flex-col justify-between gap-y-10'>
         <li className='basis-1/3'>
-          <a href='#' className='block group'>
+          <Link href='#' className='block group'>
             <article className='flex flex-wrap justify-center gap-5percent h-full'>
               <div className='sm:basis-1/3-with-gap relative'>
                 <img
@@ -30,10 +32,10 @@ const OtherTrrendingArticlesList: FC = () => {
                 </div>
               </div>
             </article>
-          </a>
+          </Link>
         </li>
         <li className='basis-1/3'>
-          <a href='#' className='block group'>
+          <Link href='#' className='block group'>
             <article className='flex flex-wrap justify-center gap-5percent h-full'>
               <div className='sm:basis-1/3-with-gap relative'>
                 <img
@@ -58,10 +60,10 @@ const OtherTrrendingArticlesList: FC = () => {
                 </div>
               </div>
             </article>
-          </a>
+          </Link>
         </li>
         <li className='basis-1/3'>
-          <a href='#' className='block group'>
+          <Link href='#' className='block group'>
             <article className='flex flex-wrap justify-center gap-5percent h-full'>
               <div className='sm:basis-1/3-with-gap relative'>
                 <img
@@ -86,7 +88,7 @@ const OtherTrrendingArticlesList: FC = () => {
                 </div>
               </div>
             </article>
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

@@ -1,5 +1,7 @@
 import { FC } from 'react';
 
+import Link from 'next/link';
+
 const LatestArticlesList: FC = () => {
   return (
     <section>
@@ -7,7 +9,7 @@ const LatestArticlesList: FC = () => {
       <ul className='flex flex-wrap gap-y-5 gap-x-5percent lg:gap-x-4percent'>
         <li className='basis-full sm:basis-1/2-with-gap lg:basis-1/4-with-gap'>
           <article>
-            <a href='#' className='flex flex-col group'>
+            <Link href='#' className='flex flex-col group'>
               <div>
                 <div className='relative'>
                   <img
@@ -33,12 +35,12 @@ const LatestArticlesList: FC = () => {
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
           </article>
         </li>
         <li className='basis-full sm:basis-1/2-with-gap lg:basis-1/4-with-gap'>
           <article>
-            <a href='#' className='flex flex-col group'>
+            <Link href='#' className='flex flex-col group'>
               <div>
                 <div className='relative'>
                   <img
@@ -64,12 +66,12 @@ const LatestArticlesList: FC = () => {
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
           </article>
         </li>
         <li className='basis-full sm:basis-1/2-with-gap lg:basis-1/4-with-gap'>
           <article>
-            <a href='#' className='flex flex-col group'>
+            <Link href='#' className='flex flex-col group'>
               <div>
                 <div className='relative'>
                   <img
@@ -95,12 +97,12 @@ const LatestArticlesList: FC = () => {
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
           </article>
         </li>
         <li className='basis-full sm:basis-1/2-with-gap lg:basis-1/4-with-gap'>
           <article>
-            <a href='#' className='flex flex-col group'>
+            <Link href='#' className='flex flex-col group'>
               <div>
                 <div className='relative'>
                   <img
@@ -126,17 +128,17 @@ const LatestArticlesList: FC = () => {
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
           </article>
         </li>
       </ul>
       <div className='flex justify-center my-8'>
-        <a
-          href='./latest.html'
+        <Link
+          href='/latest'
           className='px-8 py-4 bg-secondary text-primary rounded hover:bg-secondary-light transition-colors duration-150'
         >
           See all latest
-        </a>
+        </Link>
       </div>
     </section>
   );

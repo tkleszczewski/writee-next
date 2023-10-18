@@ -1,5 +1,7 @@
 import { FC } from 'react';
 
+import { Menu } from 'lucide-react';
+
 const Header: FC = () => {
   return (
     <header className='h-header bg-primary fixed top-0 left-0 w-full z-20 shadow-sm'>
@@ -12,7 +14,7 @@ const Header: FC = () => {
             id='menu-button'
             className='border border-secondary rounded p-1'
           >
-            <i data-lucide='menu'></i>
+            <Menu />
           </button>
           <div
             id='navigation-container'
